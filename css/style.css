@@ -16,5 +16,18 @@
     background-color:green;
     height:100vh;
 }
+.utente-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-utente-image{
+    width: 60px; 
+}
+.box-utente-image img{
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 /* -------------------------- */
