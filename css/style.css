@@ -1,13 +1,20 @@
 /* Classi per il background */
 .background-color{
     background: linear-gradient(to bottom, #439488 20%, #d9dbd6 20%);
-    height:100vh;
+    height:100%;
 }
 /* -------------------------- */
 /* Classi per il content main */
-
-
-
-
+.space-above{
+    padding: 30px 0;
+}
+.sidebar{
+    background-color:red;
+    height:100vh;
+}
+.main{
+    background-color:green;
+    height:100vh;
+}
 
 /* -------------------------- */
