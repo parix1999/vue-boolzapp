@@ -4,7 +4,7 @@
     height:100%;
 }
 /* -------------------------- */
-/* Classi per il content main */
+/* Classi per il la sidebar */
 .space-above{
     padding: 30px 0;
 }
@@ -16,9 +16,14 @@
     background-color:green;
     height:100vh;
 }
+/* Classi utente icons */
 .utente-icons{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.contenitore{
+    display: flex;
     align-items: center;
 }
 .box-utente-image{
@@ -29,5 +34,20 @@
     border-radius: 50%;
     overflow: hidden;
 }
+/* Classi notifiche in azzurro */
+.bg-azzurro{
+
+}
+
+
+
+
+/* Classi barra ricerca */
+
+
+
+
+
+/* Classi contatti per selezionare la chat */
 
 /* -------------------------- */
