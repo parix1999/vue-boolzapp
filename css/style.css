@@ -1,7 +1,7 @@
 /* Classi per il background */
 .background-color{
     background: linear-gradient(to bottom, #439488 20%, #d9dbd6 20%);
-    height: 100vh;
+    height: 100%;
 }
 /* -------------------------- */
 /* Classi per il la sidebar */
@@ -32,6 +32,8 @@
     width: 100%;
     height:calc(100vh - 70px - 110px);
     background-color:red;
+    overflow-y: scroll;
+    position:relative;
 }
 
 /* -------------------------- */
@@ -96,8 +98,6 @@
 
 /* Classi contatti per selezionare la chat */
 .contatti{
-    overflow-y: scroll;
-    position:relative;
     padding:10px 0;
 }
 .image-utente-text{
