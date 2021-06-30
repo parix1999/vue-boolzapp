@@ -19,66 +19,86 @@
                 <div class="row space-above">
                     <!-- SideBar -->
                     <div class="col-4 p-0 sidebar">
-                        <!-- Nome utente e sue icone -->
-                        <div class="utente-icons">
-                            <div class="contenitore">
-                                <div class="box-utente-image">
-                                    <img src="./img/avatar_io.jpg" alt="foto-utente">
+                        <div class="layout-sidebar">
+                            <div class="utente-io">
+                                <!-- Nome utente e sue icone -->
+                                <div class="utente-icons">
+                                    <div class="contenitore">
+                                        <div class="box-utente-image">
+                                            <img src="./img/avatar_io.jpg" alt="foto-utente">
+                                        </div>
+                                        <span>Nome Utente</span>
+                                    </div>
+                                    <!-- icone -->
+                                    <div class="icons">
+                                        <i class="fas fa-circle-notch"></i>
+                                        <i class="fas fa-comment-alt"></i>
+                                        <i class="fas fa-ellipsis-v"></i>
+                                    </div>
                                 </div>
-                                <span>Nome Utente</span>
+                                
                             </div>
-                            <!-- icone -->
-                            <div class="icons">
-                                <i class="fas fa-circle-notch"></i>
-                                <i class="fas fa-comment-alt"></i>
-                                <i class="fas fa-ellipsis-v"></i>
-                            </div>
-                        </div>
-
-                        <!-- Notifiche in azzurro -->
-                        <div class="bg-azzurro">
-                            <!-- Bell -->
-                            <div class="box-azuro">
-                                <i class="fas fa-bell-slash"></i>
-                            </div>
-                            <!-- testo -->
-                            <div class="text">
-                                <div>Ricevi notifiche di nuovi messaggi</div>
-                                <div>Attiva notifiche desktop</div>
-                            </div>
-
-                        </div>
-
-                        <!-- Barra ricerca -->
-                        <div class="search">
-                            <div class="bordo">
-                                <div class="icon-search">
-                                    <i class="fas fa-search"></i>
+                            <div class="nuova-chat-notification">
+                                <!-- Notifiche in azzurro -->
+                                <div class="bg-azzurro">
+                                    <!-- Bell -->
+                                    <div class="box-azuro">
+                                        <i class="fas fa-bell-slash"></i>
+                                    </div>
+                                    <!-- testo -->
+                                    <div class="text">
+                                        <div>Ricevi notifiche di nuovi messaggi</div>
+                                        <div>Attiva notifiche desktop</div>
+                                    </div>
+        
                                 </div>
-                                <input placeholder="Cerca o inizia una nuova chat">
+                                <!-- Barra ricerca -->
+                                <div class="search">
+                                    <div class="bordo">
+                                        <div class="icon-search">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <input placeholder="Cerca o inizia una nuova chat">
+        
+                                    </div>
+        
+                                </div>
+
+                            </div>
+                            <div class="messaggi">
+                                <!-- Contatti per selezionare la chat -->
+                                <div class="contatti">
+                                    <!-- Nome e foto vanno generati automaticamente dalla array: -->
+                                    <div class="foto">
+                                        <!-- Foto: -->
+                                        <div class="prova" v-for="img in contacts">
+                                            <div class="image-utente-text">
+                                                <img :src="img.avatar" alt="uno">
+                                            </div>
+                                            <span>{{img.name}}</span>
+        
+                                        </div>
+        
+                                    
+                                    </div>
+                                    
+        
+                                </div>
 
                             </div>
 
                         </div>
                         
-                        <!-- Contatti per selezionare la chat -->
-                        <div class="contatti">
-                            <!-- Nome e foto vanno generati automaticamente dalla array: -->
-                            <div class="foto">
-                                <!-- Foto: -->
-                                <div class="prova" v-for="img in contacts">
-                                    <div class="image-utente-text">
-                                        <img :src="img.avatar" alt="uno">
-                                    </div>
-                                    <span>{{img.name}}</span>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
 
-                                </div>
 
-                            
-                            </div>
-                            
-
-                        </div>
+                        
                         
 
                     </div>

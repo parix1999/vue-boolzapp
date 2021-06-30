@@ -1,25 +1,46 @@
 /* Classi per il background */
 .background-color{
     background: linear-gradient(to bottom, #439488 20%, #d9dbd6 20%);
-    height: 100%;
+    height: 100vh;
 }
 /* -------------------------- */
 /* Classi per il la sidebar */
 .space-above{
-    padding: 30px 0;
+    padding: 20px 0;
    
 }
 .sidebar{
     background-color:#ffffff;
     
 }
+/* Classi layout sidebar */
+.layout-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+.utente-io{
+    width:100%;
+    height: 70px;
+    background-color: #e9ebeb;
+}
+.nuova-chat-notification{
+    width:100%;
+    height: 110px;
+    background-color: #9fd7f8;
+}
+.messaggi{
+    width: 100%;
+    height:calc(100vh - 70px - 110px);
+    background-color:red;
+}
+
+/* -------------------------- */
 /* Classi utente icons */
 .utente-icons{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:12px 12px;
-    background-color: #e9ebeb ;
+    padding:0 12px;
     border-right:1px solid #d6d6d6;
 }
 .contenitore{
@@ -39,7 +60,7 @@
 .bg-azzurro{
     background-color:#9fd7f8;
     display: flex;
-    padding:12px 12px;
+    padding:10px 12px;
 }
 .box-azuro i{
     width: 50px;
@@ -54,7 +75,7 @@
 /* Classi barra ricerca */
 .search{
     display: flex;
-    padding:12px 12px;
+    padding:0 12px;
 }
 .bordo{
     border:1px solid #ccc;
@@ -77,14 +98,14 @@
 .contatti{
     overflow-y: scroll;
     position:relative;
-    height:400px;
+    padding:10px 0;
 }
 .image-utente-text{
     width:50px;
 }
 .prova{
     display: flex;
-    padding:12px 12px;
+    padding:0 12px;
     margin-bottom:10px;
 }
 .prova:hover{
@@ -98,12 +119,7 @@
     border-radius:50%;
     overflow: hidden;
 }
-.barra{
-    width:100%;
-    height:50px;
-    position:fixed;
-    background:red;
-}
+
 
 /* -------------------------- */
 /* Classi layout chat */
@@ -113,17 +129,17 @@
 }
 .top-bar{
     width:100%;
-    height:100px;
+    height:70px;
     background-color: gray;
 }
 .content-chat{
     width:100%;
-    height:calc(100vh - 100px - 100px);
+    height:calc(100vh - 70px - 70px);
     background-color:purple;
 }
 .bottom-bar{
     width:100%;
-    height:100px;
+    height:70px;
     background-color: gray;
 }
 
