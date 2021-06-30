@@ -4,7 +4,7 @@
     height: 100%;
 }
 /* -------------------------- */
-/* Classi per il la sidebar */
+/* Classi per la sidebar */
 .space-above{
     padding: 20px 0;
    
@@ -22,6 +22,8 @@
     width:100%;
     height: 70px;
     background-color: #e9ebeb;
+    border-right:1px solid #d6d6d6;
+    padding:5px 12px;
 }
 .nuova-chat-notification{
     width:100%;
@@ -42,8 +44,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 12px;
-    border-right:1px solid #d6d6d6;
 }
 .contenitore{
     display: flex;
@@ -130,17 +130,18 @@
 .top-bar{
     width:100%;
     height:70px;
-    background-color: gray;
+    background-color: #e9ebeb ;
+    padding: 5px 12px;
 }
 .content-chat{
     width:100%;
     height:calc(100vh - 70px - 70px);
-    background-color:purple;
+    background-image: url(../img/mine.jpg);
 }
 .bottom-bar{
     width:100%;
     height:70px;
-    background-color: gray;
+    background-color: #e9ebeb ;
 }
 
 
