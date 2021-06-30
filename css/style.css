@@ -1,20 +1,17 @@
 /* Classi per il background */
 .background-color{
     background: linear-gradient(to bottom, #439488 20%, #d9dbd6 20%);
-    height:100%;
+    height: 100%;
 }
 /* -------------------------- */
 /* Classi per il la sidebar */
 .space-above{
     padding: 30px 0;
+   
 }
 .sidebar{
-    background-color:red;
-    height:100vh;
-}
-.main{
-    background-color:green;
-    height:100vh;
+    background-color:#ffffff;
+    
 }
 /* Classi utente icons */
 .utente-icons{
@@ -22,6 +19,8 @@
     justify-content: space-between;
     align-items: center;
     padding:12px 12px;
+    background-color: #e9ebeb ;
+    border-right:1px solid #d6d6d6;
 }
 .contenitore{
     display: flex;
@@ -76,17 +75,58 @@
 
 /* Classi contatti per selezionare la chat */
 .contatti{
-   display: flex;
-   align-items: center;
+    overflow-y: scroll;
+    position:relative;
+    height:400px;
 }
 .image-utente-text{
     width:50px;
+}
+.prova{
+    display: flex;
+    padding:12px 12px;
+    margin-bottom:10px;
+}
+.prova:hover{
+    background-color:#e9ebeb ;
+}
+.prova span{
+    margin-left:10px;
 }
 .image-utente-text img{
     width:100%;
     border-radius:50%;
     overflow: hidden;
 }
+.barra{
+    width:100%;
+    height:50px;
+    position:fixed;
+    background:red;
+}
+
+/* -------------------------- */
+/* Classi layout chat */
+.layout-chat{
+    display: flex;
+    flex-direction: column;
+}
+.top-bar{
+    width:100%;
+    height:100px;
+    background-color: gray;
+}
+.content-chat{
+    width:100%;
+    height:calc(100vh - 100px - 100px);
+    background-color:purple;
+}
+.bottom-bar{
+    width:100%;
+    height:100px;
+    background-color: gray;
+}
+
 
 
 

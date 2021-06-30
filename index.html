@@ -66,21 +66,17 @@
                             <!-- Nome e foto vanno generati automaticamente dalla array: -->
                             <div class="foto">
                                 <!-- Foto: -->
-                                <div v-for="img in contacts">
+                                <div class="prova" v-for="img in contacts">
                                     <div class="image-utente-text">
                                         <img :src="img.avatar" alt="uno">
-    
                                     </div>
+                                    <span>{{img.name}}</span>
+
                                 </div>
 
+                            
                             </div>
-                            <div class="nomi">
-                                <!-- Nomi: -->
-                                <div v-for="name in contacts">
-                                    {{name.name}}
-                                </div>
-
-                            </div>
+                            
 
                         </div>
                         
@@ -88,7 +84,15 @@
                     </div>
 
                     <!-- Content Main -->
-                    <div class="col-8 main"></div>
+                    <div class="col-8 p-0 main">
+                        <div class="layout-chat">
+                            <div class="top-bar"></div>
+                            <div class="content-chat"></div>
+                            <div class="bottom-bar"></div>
+
+                        </div>                       
+
+                    </div>
 
 
 
