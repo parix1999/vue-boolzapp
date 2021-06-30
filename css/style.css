@@ -35,6 +35,7 @@
     border-radius: 50%;
     overflow: hidden;
 }
+
 /* Classi notifiche in azzurro */
 .bg-azzurro{
     background-color:#9fd7f8;
@@ -51,10 +52,27 @@
     
 }
 
-
-
 /* Classi barra ricerca */
-
+.search{
+    display: flex;
+    padding:12px 12px;
+}
+.bordo{
+    border:1px solid #ccc;
+    width:100%;
+    display: flex;
+}
+.icon-search{
+    background-color:white;
+    border-color:white;
+    padding-left:15px;
+    color:#bbbdbf;
+}
+.bordo input{
+    border:none;
+    padding-left:15px;
+    width:100%;
+}
 
 
 
