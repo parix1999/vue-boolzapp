@@ -74,9 +74,21 @@
     width:100%;
 }
 
-
-
-
 /* Classi contatti per selezionare la chat */
+.contatti{
+   display: flex;
+   align-items: center;
+}
+.image-utente-text{
+    width:50px;
+}
+.image-utente-text img{
+    width:100%;
+    border-radius:50%;
+    overflow: hidden;
+}
+
+
+
 
 /* -------------------------- */

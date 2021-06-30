@@ -62,23 +62,25 @@
                         </div>
                         
                         <!-- Contatti per selezionare la chat -->
-                        <div>
+                        <div class="contatti">
                             <!-- Nome e foto vanno generati automaticamente dalla array: -->
-                            <!-- Foto: -->
-                            <div v-for="img in contacts">
-                                <div class="image-utente-text">
-                                    <img :src="img.avatar" alt="uno">
-
+                            <div class="foto">
+                                <!-- Foto: -->
+                                <div v-for="img in contacts">
+                                    <div class="image-utente-text">
+                                        <img :src="img.avatar" alt="uno">
+    
+                                    </div>
                                 </div>
+
                             </div>
-                            <!-- Nomi: -->
-                            <div v-for="name in contacts">
-                                {{name.name}}
+                            <div class="nomi">
+                                <!-- Nomi: -->
+                                <div v-for="name in contacts">
+                                    {{name.name}}
+                                </div>
+
                             </div>
-
-
-
-
 
                         </div>
                         
