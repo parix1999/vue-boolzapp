@@ -93,8 +93,16 @@ new Vue(
             
         },
         methods:{
-            messageStatus:function(messageStatus){
-                console.log(messageStatus);
+            /* Praticamente sono dentro a messageStatus, e qui dentro la funzione si collegata
+            con il :class creato nell'HTML, e posso decidere il nome della funzione da ridare 
+            alla classe, per poi modificarla a piacere nel css*/
+            messageStatus:function(status){
+                console.log(status);
+                if (status === 'sent'){
+                    return 'check';
+                } else {
+                    return 'white';
+                }
             },
         },
     }

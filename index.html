@@ -123,7 +123,7 @@
                                     <div class="prova-content-2">
                                         <!-- Messange 1-2  Verde-->
                                         <div class="sms-2">
-                                            <div v-for="message in contacts[currentIndex].messages" :class="messageStatus(messageStatus)">
+                                            <div v-for="message in contacts[currentIndex].messages" :class="messageStatus(message.status)">
                                                 {{message.text}}
 
                                             </div>
