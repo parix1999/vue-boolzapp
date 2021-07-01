@@ -175,9 +175,27 @@
 
 /* -------------------------- */
 /* Classi per il content-chat, dove ci sono i messaggi: */
+.content-chat{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom:20px;
+}
 
+.sms-1 div{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
 
-
+}
+.sms-2 div{
+    background-color: #dcf8c0;
+    padding: 10px;
+    border-radius: 15px;
+}
+.sms-2 .spazio{
+    margin-top:10px;
+}
 
 
 

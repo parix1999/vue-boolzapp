@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoolzApp</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
+
 <body>
     <div id="app">
         <!-- Classe bg tagliato: -->
@@ -36,7 +39,7 @@
                                         <i class="fas fa-ellipsis-v"></i>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="nuova-chat-notification">
                                 <!-- Notifiche in azzurro -->
@@ -50,7 +53,7 @@
                                         <div>Ricevi notifiche di nuovi messaggi</div>
                                         <div>Attiva notifiche desktop</div>
                                     </div>
-        
+
                                 </div>
                                 <!-- Barra ricerca -->
                                 <div class="search">
@@ -59,9 +62,9 @@
                                             <i class="fas fa-search"></i>
                                         </div>
                                         <input placeholder="Cerca o inizia una nuova chat">
-        
+
                                     </div>
-        
+
                                 </div>
 
                             </div>
@@ -76,24 +79,24 @@
                                                 <img :src="img.avatar" alt="uno">
                                             </div>
                                             <span>{{img.name}}</span>
-        
+
                                         </div>
-        
+
                                     </div>
-                                    
-        
+
+
                                 </div>
 
                             </div>
 
-                        </div>                        
+                        </div>
 
                     </div>
                     <!-- Content Main-Chat: -->
                     <div class="col-8 p-0 main">
                         <div class="layout-chat">
                             <div class="top-bar">
-                                
+
                                 <div class="utente-icons">
                                     <div class="contenitore">
                                         <div class="box-utente-image">
@@ -110,38 +113,26 @@
                                         <i class="fas fa-paperclip"></i>
                                         <i class="fas fa-ellipsis-v"></i>
                                     </div>
-                                    
+
                                 </div>
 
                             </div>
                             <!-- TODO: -->
                             <div class="content-chat">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <!-- Messange 1 Bianco -->
-                                            <div class="sms-1">
-                                                Tutto Fatto
-                                            </div>
 
-                                        </div>
+                                <!-- Messange 1 Bianco -->
+                                <div class="sms-1">
+                                    <div>Tutto Fatto</div>
+                                </div>
 
-                                        <div class="col-6">
-                                            <!-- Messange 3  Verde-->
-                                            <div class="sms-2">
-                                                Hai portato a spasso il cane ?
-                                            </div>
-                                            <!-- Messange 2 Verde -->
-                                            <div class="sms-2">
-                                                Ricordati di dargli da mangiare
-                                            </div>
-
-                                        </div>
-                                    </div>
+                                <!-- Messange 2-3  Verde-->
+                                <div class="sms-2">
+                                    <div>Hai portato a spasso il cane ?</div>
+                                    <div class="spazio">Ricordati di dargli da mangiare</div>
                                 </div>
 
                             </div>
-                            
+
                             <div class="bottom-bar">
                                 <!-- Prima parte icona smile -->
                                 <div class="content-bottom-bar-1">
@@ -152,7 +143,7 @@
                                 <!-- parte input -->
                                 <div class="write-message">
                                     <input placeholder="Scrivi un messaggio">
-                                </div> 
+                                </div>
                                 <!-- Terza parte icona microfono -->
                                 <div class="icon-microfono">
                                     <div class="box-icon-input">
@@ -161,7 +152,7 @@
                                 </div>
                             </div>
 
-                        </div>                       
+                        </div>
 
                     </div>
 
@@ -176,10 +167,11 @@
 
         </div>
 
-        
+
     </div> <!-- chiusura div VueJS -->
 
 
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
+
 </html>
