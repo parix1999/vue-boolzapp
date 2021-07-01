@@ -4,7 +4,7 @@ new Vue(
     {
         el:'#app',
         data:{
-            currentIndex: 2,
+            currentIndex: 0,
             contacts: [
                 {
                     name: 'Michele',

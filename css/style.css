@@ -175,26 +175,38 @@
 
 /* -------------------------- */
 /* Classi per il content-chat, dove ci sono i messaggi: */
-.prova-content-2{
-    padding:20px 0;
-    display: flex;
-    flex-direction: column;
+.clearfix{
+    content:'';
+    display: table;
+    clear: both;
+    text-align: center;
 }
-.prova-content-2 div{
-    border-radius: 15px;
-    padding: 10px;
-    margin-bottom:10px;
+.spazio{
+    width:450px;
+    margin-left: 100px;
 }
-.prova-content-2 div:last-child{
+.space{
+    padding:20px 20px;
+}
+.clearfix div:last-child{
     margin-bottom:0;
 }
 
 /* Classi colore sfondo date da js */
 .check{
     background-color: #dcf8c0;
+    float: right;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom:10px;
+    width:400px;
 }
 .white{
     background-color: #ffffff;
+    float:left;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom:10px;
     
 }
 /* -------------------------- */
