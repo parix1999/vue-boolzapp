@@ -2,6 +2,7 @@
 .background-color{
     background: linear-gradient(to bottom, #439488 20%, #d9dbd6 20%);
     height: 100%;
+    /* TODO: Sistemare l'altezza totale per farlo 100% della Vh */
 }
 /* -------------------------- */
 /* Classi per la sidebar */
@@ -139,6 +140,8 @@
     width:100%;
     height:calc(100vh - 70px - 70px);
     background-image: url(../img/mine.jpg);
+    overflow-y: scroll;
+    position:relative; 
 }
 .bottom-bar{
     width:100%;
@@ -170,5 +173,17 @@
     margin: 0 10px;
 }
 
+/* -------------------------- */
+/* Classi per il content-chat, dove ci sono i messaggi: */
+
+
+
+
+
+
+
+
+
 
 /* -------------------------- */
+
