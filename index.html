@@ -125,16 +125,16 @@
                                         <div class="sms-2">
                                             <div v-for="message in contacts[currentIndex].messages" :class="messageStatus(message.status)">
                                                 {{message.text}}
-
                                             </div>
-
                                         </div>
-                                        
+                                                            
                                     </div>
                                     <div class="prova-content">
                                         <!-- Messange 3 Bianco -->
                                         <div class="sms-1">
-                                            <div>Tutto Fatto</div>
+                                            <div v-for="message in contacts[currentIndex].messages" :class="messageStatusSecondoUtente(message.status)">
+                                                {{message.text}}
+                                            </div>
                                         </div>
         
                                     </div>

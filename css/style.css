@@ -195,17 +195,25 @@
 .sms-2 div{
     padding: 10px;
     border-radius: 15px;
-}
-.sms-2 .spazio{
     margin-top:10px;
 }
+
+/* Classi colore sfondo date da js */
 .check{
     background-color: #dcf8c0;
 }
 .white{
     background-color: #ffffff;
+    display: none;
 }
-
+.check-due{
+    background-color: #dcf8c0;
+    display: none;
+}
+.white-due{
+    background-color: #ffffff;
+}
+/* -------------------------- */
 
 
 
