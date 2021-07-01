@@ -160,10 +160,14 @@
     background-color:e9ebeb;
     font-size:30px;
 }
+.write-message{
+    width:100%;
+}
+
 .write-message input{
-    width: calc(100% - 10px);
-    height:40px;
-    margin-left:10px;
+    width: calc(100% - 20px);
+    height:60px;
+    margin: 0 10px;
 }
 
 
