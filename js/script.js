@@ -4,7 +4,7 @@ new Vue(
     {
         el:'#app',
         data:{
-            currentIndex: 0,
+            currentIndex: 2,
             contacts: [
                 {
                     name: 'Michele',
@@ -111,6 +111,9 @@ new Vue(
                 } else {
                     return 'white-due';
                 }
+            },
+            selezioneUtente:function(){
+
             },
         },
     }

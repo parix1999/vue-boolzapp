@@ -106,15 +106,15 @@
 .image-utente-text{
     width:50px;
 }
-.prova{
+.selezione-contatti{
     display: flex;
     padding:0 12px;
     margin-bottom:10px;
 }
-.prova:hover{
+.selezione-contatti:hover{
     background-color:#e9ebeb ;
 }
-.prova span{
+.selezione-contatti span{
     margin-left:10px;
 }
 .image-utente-text img{
@@ -175,27 +175,18 @@
 
 /* -------------------------- */
 /* Classi per il content-chat, dove ci sono i messaggi: */
-.prova-content{
-    display: flex;
-    align-items: flex-start;
-    padding-bottom:20px;
-}
 .prova-content-2{
-    display: flex;
-    justify-content: flex-end;
     padding:20px 0;
+    display: flex;
+    flex-direction: column;
 }
-
-.sms-1 div{
-    background-color: #ffffff;
-    padding: 10px;
+.prova-content-2 div{
     border-radius: 15px;
-
+    padding: 10px;
+    margin-bottom:10px;
 }
-.sms-2 div{
-    padding: 10px;
-    border-radius: 15px;
-    margin-top:10px;
+.prova-content-2 div:last-child{
+    margin-bottom:0;
 }
 
 /* Classi colore sfondo date da js */
@@ -204,14 +195,7 @@
 }
 .white{
     background-color: #ffffff;
-    display: none;
-}
-.check-due{
-    background-color: #dcf8c0;
-    display: none;
-}
-.white-due{
-    background-color: #ffffff;
+    
 }
 /* -------------------------- */
 

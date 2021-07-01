@@ -74,7 +74,7 @@
                                     <!-- Nome e foto vanno generati automaticamente dalla array: -->
                                     <div class="foto">
                                         <!-- Foto: -->
-                                        <div class="prova" v-for="img in contacts">
+                                        <div @click="" class="selezione-contatti" v-for="img in contacts">
                                             <div class="image-utente-text">
                                                 <img :src="img.avatar" alt="uno">
                                             </div>
@@ -121,23 +121,19 @@
                             <div class="content-chat">
                                 <div class="container">
                                     <div class="prova-content-2">
-                                        <!-- Messange 1-2  Verde-->
-                                        <div class="sms-2">
-                                            <div v-for="message in contacts[currentIndex].messages" :class="messageStatus(message.status)">
-                                                {{message.text}}
-                                            </div>
+                                        <!-- Messaggi-->
+
+                                        <div v-for="message in contacts[currentIndex].messages"
+                                            :class="messageStatus(message.status)">
+                                            {{message.text}}
                                         </div>
-                                                            
+
+
+
+
+
                                     </div>
-                                    <div class="prova-content">
-                                        <!-- Messange 3 Bianco -->
-                                        <div class="sms-1">
-                                            <div v-for="message in contacts[currentIndex].messages" :class="messageStatusSecondoUtente(message.status)">
-                                                {{message.text}}
-                                            </div>
-                                        </div>
-        
-                                    </div>
+
 
                                 </div>
 
