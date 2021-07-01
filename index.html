@@ -123,13 +123,11 @@
                                     <div class="prova-content-2">
                                         <!-- Messange 1-2  Verde-->
                                         <div class="sms-2">
-                                            <div v-for="(testo, index) in contacts">
-                                                {{testo.messages.text}}
+                                            <div v-for="message in contacts[currentIndex].messages" :class="check">
+                                                {{message.text}}
+
                                             </div>
 
-                                            <div class="spazio">
-                                                Ricordati di dargli da mangiare
-                                            </div>
                                         </div>
                                         
                                     </div>

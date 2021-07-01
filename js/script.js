@@ -4,6 +4,8 @@ new Vue(
     {
         el:'#app',
         data:{
+            check:'check',
+            currentIndex: 0,
             contacts: [
                 {
                     name: 'Michele',
@@ -92,7 +94,13 @@ new Vue(
             
         },
         methods:{
-
+            check:function(){
+                if(this.message.status === 'recived'){
+                    return check
+                } else {
+                    return white
+                }
+            },
         },
     }
 )

@@ -193,14 +193,18 @@
 
 }
 .sms-2 div{
-    background-color: #dcf8c0;
     padding: 10px;
     border-radius: 15px;
 }
 .sms-2 .spazio{
     margin-top:10px;
 }
-
+.check{
+    background-color: #dcf8c0;
+}
+.white{
+    background-color: #ffffff;
+}
 
 
 
