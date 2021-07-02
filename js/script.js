@@ -104,16 +104,10 @@ new Vue(
                     return 'white';
                 }
             },
-            messageStatusSecondoUtente:function(UtenteDue){
-                console.log(UtenteDue);
-                if (UtenteDue === 'sent'){
-                    return 'check-due';
-                } else {
-                    return 'white-due';
-                }
-            },
-            selezioneUtente:function(){
-
+            
+            selezioneUtente:function (index) {
+                //Problema è cambiare la posizione dell'indice a seconda di dove clicco
+                return this.currentIndex.messages = index; 
             },
         },
     }
