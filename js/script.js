@@ -2,10 +2,11 @@ Vue.config.devtools = true;
 
 new Vue(
     {
-        el:'#app',
-        data:{
+        el: '#app',
+        data: {
             currentIndex: 0,
-            messaggiUtente: '', 
+            messaggiUtente: '',
+            messaggioComputer: 'ok',
             contacts: [
                 {
                     name: 'Michele',
@@ -91,15 +92,15 @@ new Vue(
                     ],
                 },
             ]
-            
+
         },
-        methods:{
+        methods: {
             /* Praticamente sono dentro a messageStatus, e qui dentro la funzione si collegata
             con il :class creato nell'HTML, e posso decidere il nome della funzione da ridare 
             alla classe, per poi modificarla a piacere nel css*/
-            messageStatus:function(utenteUno){
+            messageStatus: function (utenteUno) {
                 console.log(utenteUno);
-                if (utenteUno === 'sent'){
+                if (utenteUno === 'sent') {
                     return 'check';
                 } else {
                     return 'white';
@@ -110,13 +111,30 @@ new Vue(
             },
             invioMessaggio: function () {
                 this.contacts[this.currentIndex].messages.push({
-                    //data:..
+                    //data:.. TODO
                     text: this.messaggiUtente,
                     status: 'sent',
                 });
-                this.messaggiUtente="";
-            }
-            
+                this.messaggiUtente = "";
+                //Cmputer risposta:
+                setTimeout(myFunction, 1000);
+                function myFunction(){
+                    this.contacts[this.currentIndex].messages.push({
+                        //data...
+                        text: this.messaggioComputer,
+                        status: 'received',
+    
+                    });
+
+                }
+
+
+
+
+
+            },
+
+
         },
     }
 )
