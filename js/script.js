@@ -108,12 +108,13 @@ new Vue(
             selezioneUtente: function (index) {
                 return this.currentIndex = index;
             },
-            messaggiUtente: function () {
-                this.contacts[0].messages.push({
+            invioMessaggio: function () {
+                this.contacts[this.currentIndex].messages.push({
                     //data:..
                     text: this.messaggiUtente,
                     status: 'sent',
                 });
+                this.messaggiUtente="";
             }
             
         },
