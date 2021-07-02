@@ -149,7 +149,7 @@
                                 </div>
                                 <!-- parte input -->
                                 <div class="write-message">
-                                    <input placeholder="Scrivi un messaggio">
+                                    <input @keyup.enter v-model="messaggiUtente" placeholder="Scrivi un messaggio">
                                 </div>
                                 <!-- Terza parte icona microfono -->
                                 <div class="icon-microfono">

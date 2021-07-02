@@ -1,15 +1,12 @@
 /* Classi per il background */
 .background-color{
     background: linear-gradient(to bottom, #439488 20%, #d9dbd6 20%);
-    height: 100%;
+    
     /* TODO: Sistemare l'altezza totale per farlo 100% della Vh */
 }
 /* -------------------------- */
 /* Classi per la sidebar */
-.space-above{
-    padding: 20px 0;
-   
-}
+
 .sidebar{
     background-color:#ffffff;
     

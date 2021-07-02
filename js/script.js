@@ -5,6 +5,7 @@ new Vue(
         el:'#app',
         data:{
             currentIndex: 0,
+            messaggiUtente: '', 
             contacts: [
                 {
                     name: 'Michele',
@@ -106,6 +107,13 @@ new Vue(
             },
             selezioneUtente: function (index) {
                 return this.currentIndex = index;
+            },
+            messaggiUtente: function () {
+                this.contacts[0].messages.push({
+                    //data:..
+                    text: this.messaggiUtente,
+                    status: 'sent',
+                });
             }
             
         },
