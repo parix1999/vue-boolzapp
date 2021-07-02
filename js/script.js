@@ -117,17 +117,17 @@ new Vue(
                 });
                 this.messaggiUtente = "";
                 //Cmputer risposta:
-                setTimeout(myFunction, 1000);
-                function myFunction(){
+                setTimeout(() => {
                     this.contacts[this.currentIndex].messages.push({
                         //data...
                         text: this.messaggioComputer,
                         status: 'received',
-    
+
                     });
 
-                }
 
+
+                }, 1000);
 
 
 
@@ -135,6 +135,8 @@ new Vue(
             },
 
 
-        },
+
+
+        }
     }
 )
