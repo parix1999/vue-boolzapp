@@ -7,6 +7,7 @@ new Vue(
             currentIndex: 0,
             messaggiUtente: '',
             messaggioComputer: 'ok',
+            inputRichercaUtente: '', 
             contacts: [
                 {
                     name: 'Michele',
@@ -128,9 +129,6 @@ new Vue(
 
 
                 }, 1000);
-
-
-
 
             },
 
