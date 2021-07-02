@@ -104,11 +104,10 @@ new Vue(
                     return 'white';
                 }
             },
+            selezioneUtente: function (index) {
+                return this.currentIndex = index;
+            }
             
-            selezioneUtente:function (index) {
-                //Problema è cambiare la posizione dell'indice a seconda di dove clicco
-                return this.currentIndex.messages = index; 
-            },
         },
     }
 )

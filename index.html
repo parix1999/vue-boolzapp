@@ -74,7 +74,7 @@
                                     <!-- Nome e foto vanno generati automaticamente dalla array: -->
                                     <div class="foto">
                                         <!-- Foto: -->
-                                        <div @click="selezioneUtente" class="selezione-contatti" v-for="(img, index) in contacts">
+                                        <div @click="selezioneUtente(indiceOggetto)" class="selezione-contatti" v-for="(img, indiceOggetto) in contacts">
                                             <div class="image-utente-text">
                                                 <img :src="img.avatar" alt="uno">
                                             </div>
