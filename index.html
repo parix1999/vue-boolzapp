@@ -61,7 +61,10 @@
                                         <div class="icon-search">
                                             <i class="fas fa-search"></i>
                                         </div>
-                                        <input v-model="inputRichercaUtente" placeholder="Cerca o inizia una nuova chat">
+                                        <!-- Serve una funzione per vedere chi si cerca: -->
+                                        <input 
+                                        v-model="inputRichercaUtente" 
+                                        placeholder="Cerca o inizia una nuova chat">
 
                                     </div>
 
@@ -74,10 +77,14 @@
                                     <!-- Nome e foto vanno generati automaticamente dalla array: -->
                                     <div class="foto">
                                         <!-- Foto: -->
-                                        <div @click="selezioneUtente(indiceOggetto)" class="selezione-contatti" v-for="(img, indiceOggetto) in contacts">
-                                            <div class="image-utente-text">
-                                                <img :src="img.avatar" alt="uno">
+                                        <div 
+                                        @click="selezioneUtente(indiceOggetto)" 
+                                        class="selezione-contatti"
+                                        v-for="(img, indiceOggetto) in contacts">                             
+                                        <div class="image-utente-text">
+                                                <img :src="img.avatar" alt="immagine profilo utente">
                                             </div>
+                                            <!-- To do: nuovo for: -->
                                             <span>{{img.name}}</span>
 
                                         </div>

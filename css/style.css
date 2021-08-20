@@ -208,7 +208,13 @@
 }
 /* -------------------------- */
 
+.visibile {
+    display: block;
+}
 
+.nonVisibile {
+    display: none;
+}
 
 
 

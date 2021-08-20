@@ -95,6 +95,23 @@ new Vue(
             ]
 
         },
+        computed: {
+            // Idea di ciclare dentro la funzione ?-->: 
+            getFiltered() {
+                // Prova del filtro:
+                // Quindi se la ricerca utente è true, è popolata:
+                if(this.inputRichercaUtente) {
+                    // Mi fai il filtro del item dentro contracts:
+                    return this.contacts.filter((item)=>{
+                        // ritorni il nome che  inizia con le parole scritte dall'utente:
+                        return item.name.startsWith(this.inputRichercaUtente);
+                    })
+                } else {
+                    // O ritorni l'oggetto:
+                    return this.contacts;
+                }
+            }
+        },
         methods: {
             /* Praticamente sono dentro a messageStatus, e qui dentro la funzione si collegata
             con il :class creato nell'HTML, e posso decidere il nome della funzione da ridare 
@@ -117,7 +134,7 @@ new Vue(
                     status: 'sent',
                 });
                 this.messaggiUtente = "";
-                //Cmputer risposta:
+                //Computer risposta:
                 setTimeout(() => {
                     this.contacts[this.currentIndex].messages.push({
                         //data...
@@ -125,15 +142,10 @@ new Vue(
                         status: 'received',
 
                     });
-
-
-
                 }, 1000);
 
             },
-
-
-
+            
 
         }
     }

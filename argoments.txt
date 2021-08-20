@@ -1,0 +1,58 @@
+MILESTONE 3:
+1- Aggiunta di un messaggio: l’utente scrive un testo nella parte 
+bassa e digitando “enter” il testo viene aggiunto al thread sopra, come messaggio 
+verde
+2- Risposta dall’interlocutore: ad ogni inserimento di un messaggio, 
+l’utente riceverà un “ok” come risposta, che apparirà dopo 1 secondo.
+
+Per il primo pezzo, uso un v-model per prendere il dato che l'utente scriverà
+all'interno dell'input, per poi salvare il dato all'interno di una variabile 
+in js:
+
+1-
+// Problema 1: Come salvare il dato dell'utente: *
+<input @keyup.enter v-model="messaggioUtente" ....>      messaggioUtente: '', 
+
+// Problema 2: Come aggiungere il testo salvato, e metterlo nella chat in forma di messaggio:
+- Devo pushare il tutto, il quale sarà un'oggetto, quindi avrà
+le sue key e il suo valore, che sarà personalizzato,
+dentro alla struttura dati, tramite un metodo:
+- Il metodo lo richiamo nell'html sempre tramite il v-model:
+
+messaggiUtente: function () {
+    contact[indice-dove-inserire-il-nuovo-oggetto].messages.push({
+        data: /* è un TODO però; ,
+        text: this.messagiUtente, 
+        status: 'sent', --> Perchè lo sta inviando l'utente
+    })
+
+}
+
+2-
+// Problema 1: Come faccio a settare l'intervallo?; magari con un setTimeout, dato
+che è una cosa che deve succedere dopo un TOT di tempo e non Ogni TOT di tempo come il setIntervall:
+
+- Dentro ad una variabile mi salvo la risposta del computer;
+poi faccio un setTimeOut dentro alla funzione che si rimanda al keyup
+cosi da avere un collegamento con l'html,
+all'interno ci pusho il messaggio del computer con lo status 'received'.
+
+
+MILESTONE 4- 
+Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i 
+contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” 
+rimangono solo Marco e Martina):
+
+Okay come faccio a controllare?,
+Inizio con il dare una v-model all'input, cosi che possa prendermi il dato che scrive
+l'utente;
+per poi scrivere una funzione che controlli se all'interno dell'array con oggetti nel value nome
+è presente o meno quello che sta scrivendo. 
+
+
+
+
+
+
+
+
