@@ -100,14 +100,14 @@ new Vue(
             getFiltered() {
                 // Prova del filtro:
                 // Quindi se la ricerca utente è true, è popolata:
-                if(this.inputRichercaUtente) {
+                if(this.inputRichercaUtente.charAt(0).toUpperCase() + this.inputRichercaUtente.slice(1)) {
                     // Mi fai il filtro del item dentro contracts:
                     return this.contacts.filter((item)=>{
                         // ritorni il nome che  inizia con le parole scritte dall'utente:
-                        return item.name.startsWith(this.inputRichercaUtente);
+                        return item.name.startsWith(this.inputRichercaUtente.charAt(0).toUpperCase() + this.inputRichercaUtente.slice(1));
                     })
                 } else {
-                    // O ritorni l'oggetto:
+                    // O allora ritorni l'oggetto:
                     return this.contacts;
                 }
             }
