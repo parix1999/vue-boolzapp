@@ -80,12 +80,12 @@
                                         <div 
                                         @click="selezioneUtente(indiceOggetto)" 
                                         class="selezione-contatti"
-                                        v-for="(img, indiceOggetto) in contacts">                             
+                                        v-for="item in getFiltered">                             
                                         <div class="image-utente-text">
-                                                <img :src="img.avatar" alt="immagine profilo utente">
+                                                <img :src="item.avatar" alt="immagine profilo utente">
                                             </div>
                                             <!-- To do: nuovo for: -->
-                                            <span>{{img.name}}</span>
+                                            <span>{{item.name}}</span>
 
                                         </div>
 
