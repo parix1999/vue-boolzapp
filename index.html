@@ -28,9 +28,9 @@
                                 <div class="utente-icons">
                                     <div class="contenitore">
                                         <div class="box-utente-image">
-                                            <img src="./img/avatar_io.jpg" alt="foto-utente">
+                                            <img src="./img/avatar_4.jpg" alt="foto-utente">
                                         </div>
-                                        <span>Nome Utente</span>
+                                        <span>Edo</span>
                                     </div>
                                     <!-- icone -->
                                     <div class="icons">
@@ -78,9 +78,9 @@
                                     <div class="foto">
                                         <!-- Foto: -->
                                         <div 
-                                        @click="selezioneUtente(indiceOggetto)" 
+                                        @click="selezioneUtente(index)" 
                                         class="selezione-contatti"
-                                        v-for="item in getFiltered">                             
+                                        v-for="(item, index) in getFiltered">                             
                                         <div class="image-utente-text">
                                                 <img :src="item.avatar" alt="immagine profilo utente">
                                             </div>
